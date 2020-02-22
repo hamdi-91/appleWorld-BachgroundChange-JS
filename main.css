@@ -1,0 +1,49 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("app-0.jpg");
+    background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.image{
+    background: yellow;
+    flex: 0 70%;
+    min-height: 70vh;
+    position: relative;
+    background: url("app-1.jpg")center/cover no-repeat;
+    border-radius: 17px;
+    box-shadow: 6px 10px;
+
+}
+.btn{
+    display: inline-block;
+    background: whitesmoke;
+    color: black;
+    border: 5px solid green;
+    font-size: 1.8rem;
+    border-radius: 16px;
+    padding: 0.5rem;
+    box-shadow: 2px 5px black;
+    outline: none;
+    cursor: pointer;
+}
+.prev{
+position: absolute;
+top: 50%;
+left: 0;
+transform: translate(-50%,-50%);
+}
+.next{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%,-50%);
+    }
+    .btn:active{
+        background: green;
+        box-shadow: 1px 1px grey;
+    }
